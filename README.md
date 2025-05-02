@@ -84,3 +84,8 @@ NEXT STEPS -
 
 5. Transition to React frontend for a more dynamic UI
 
+WHAT IS NOT WORKING CURRENTLY -
+
+1. The uploaded image is not visible
+2. The background of the website is not visible
+
