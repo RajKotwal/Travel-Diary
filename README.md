@@ -1,28 +1,35 @@
 Travel Diary 🗺️📔
 
-Travel Diary is a full-stack web application that lets users record their travel memories in the form of a digital scrapbook. Users can upload journal entries, tag locations on an interactive map, attach images, record moods, and relive past journeys with rich, personalized context.
+Travel Diary is a full-stack web application that lets users record their travel memories in the form of a digital scrapbook. Users can upload journal entries, tag locations on an interactive map (broader picture), attach images, record moods, and relive past journeys with rich, personalized context.
 
 How to Set Up and Run the Application -
+
 1. If you're starting locally (like I did): 
+
 a. Created the folder manually
+
 b. Initialized a local Git repo using git init
+
 c. Connected it to your GitHub repo using git remote add origin ...
+
 d. Then pushed my local files to GitHub
 
-2. Install Dependencies -
-Make sure you have Node.js and MongoDB Atlas set up.
+2. Install Dependencies - Make sure you have Node.js and MongoDB Atlas set up.
 
-3. Set Up Environment Variables -
-Create a .env file in the root folder and add your MongoDB URI and port
+3. Set Up Environment Variables - Create a .env file in the root folder and add your MongoDB URI and port
 
-4. Run the Server Locally -
-I used node server.js
+4. Run the Server Locally - I used node server.js
 
 5. Deploy on Heroku -
+
 a. Install Heroku CLI
+
 b. Login: heroku login
+
 c. Create app: heroku create your-app-name
-d. Push code:
+
+d. Push code
+
 e. Open in browser: heroku open
 
 
@@ -32,7 +39,7 @@ REQUIREMENTS/SPECIFICATIONS -
 
 Frontend: HTML, CSS, JavaScript
 
-Backend: Node.js + Express
+Backend: Node.js 
 
 Database: MongoDB Atlas
 
@@ -46,13 +53,13 @@ Click a pin to view associated memory details
 
 TOOLS/TECHNOLOGIES -
 
-Frontend: HTML, CSS, EJS
+Frontend: HTML, CSS, JS
 
 Backend: Node.js, Express.js
 
 Database: MongoDB (via Atlas)
 
-Map: Leaflet.js
+Map: Leaflet.js (future scope)
 
 Hosting: Heroku
 
