@@ -1,0 +1,20 @@
+require('dotenv').config()
+const express = require('express')
+const mongoose = require('mongoose')
+const path = require('path')
+const Entry = require('./models/Entry')
+mongoose.connect(process.env.MONGODB_URI)
+const app = express()
+app.use(express.json())
+app.use(express.static(path.join(__dirname, 'public')))
+app.get('/api/entries', async (_, res) => {
+const entries = await Entry.find().sort({ date: -1 })
+res.json(entries)
+})
+app.post('/api/entries', async (req, res) => {
+const entry = new Entry(req.body)
+await entry.save()
+res.json(entry)
+})
+const port = process.env.PORT || 3000
+app.listen(port, () => console.log(`Server running on port ${port}`))
