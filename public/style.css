@@ -3,18 +3,26 @@ body {
     padding: 20px;
     max-width: 600px;
     margin: auto;
-    }
-    input, textarea {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+input, textarea {
     width: 100%;
     margin: 8px 0;
-    }
-    button {
+}
+
+button {
     background: #e67e22;
     color: white;
     padding: 8px;
     border: none;
-    }
-    .entry {
+}
+
+.entry {
     border-top: 1px solid #ccc;
     margin-top: 20px;
-    }
+}
